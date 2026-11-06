@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reaproveit.ai - Login</title>
+
+    <link rel="stylesheet" href="/css/paginaLogin.css">
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="/imagens/favicon_reaproveita_maximo.png"
+    >
+</head>
+
+<body>
+
+    <main class="login-page">
+
+        <div class="login-container">
+
+            <!-- LADO ESQUERDO -->
+            <section class="login-brand">
+
+                <img
+                    src="/imagens/imagem de loginnn.png"
+                    alt="Reaproveit.ai"
+                >
+
+                <p>
+                    O ecossistema definitivo para
+                    aproveitar melhor os alimentos
+                    e reduzir o desperdício.
+                </p>
+
+            </section>
+
+
+            <!-- LADO DIREITO -->
+            <section class="login-card">
+
+                <div class="form-wrapper">
+
+                    <h2>Login</h2>
+
+                    <p class="subtitle">
+                        Entre na sua conta ou crie uma conta nova
+                    </p>
+
+
+                    <!-- FORMULÁRIO DE LOGIN -->
+
+                    <form id="loginForm">
+
+                        <!-- E-MAIL -->
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <div class="input-box">
+
+                            <input
+                                id="email"
+                                type="email"
+                                placeholder="Digite seu e-mail"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- SENHA -->
+
+                        <label for="password">
+                            Senha
+                        </label>
+
+                        <div class="input-box">
+
+                            <input
+                                id="password"
+                                type="password"
+                                placeholder="Digite sua senha"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="show-password"
+                            >
+                                
+                            </button>
+
+                        </div>
+
+
+                        <!-- OPÇÕES -->
+
+                        <div class="options">
+
+                            <label class="remember">
+
+                                <input
+                                    type="checkbox"
+                                    id="remember"
+                                >
+
+                                <span>
+                                    Lembra de mim
+                                </span>
+
+                            </label>
+
+
+                            <button
+                                type="button"
+                                class="forgot"
+                                id="forgotPassword"
+                            >
+                                Esqueci minha senha
+                            </button>
+
+                        </div>
+
+
+                        <!-- BOTÃO ENTRAR -->
+
+                        <button
+                            class="enter-button"
+                            type="submit"
+                        >
+                            Entrar
+                        </button>
+
+
+                        <!-- MENSAGEM -->
+
+                        <p
+                            id="message"
+                            class="message"
+                        ></p>
+
+                    </form>
+
+
+                    <!-- DIVISÓRIA -->
+
+                    <div class="divider">
+                        <span>ou</span>
+                    </div>
+
+
+                    <!-- CADASTRO -->
+
+                    <p class="signup">
+
+                        Ainda não tem uma conta?
+
+                        <button
+                            type="button"
+                            id="openSignup"
+                            onclick="window.location.href='cadastro.html'"
+                        >
+                            Criar conta
+                        </button>
+
+                    </p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- JANELA DE CADASTRO -->
+
+    <div
+        class="modal hidden"
+        id="signupModal"
+    >
+
+        <div class="modal-box">
+
+            <button
+                class="close"
+                id="closeSignup"
+            >
+                ×
+            </button>
+
+
+            <h3>
+                Criar conta
+            </h3>
+
+
+            <p>
+                Cadastre um e-mail e uma senha.
+            </p>
+
+
+            <form id="signupForm">
+
+                <label for="signupEmail">
+                    E-mail
+                </label>
+
+                <input
+                    id="signupEmail"
+                    type="email"
+                    placeholder="seuemail@email.com"
+                    required
+                >
+
+
+                <label for="signupPassword">
+                    Senha
+                </label>
+
+                <input
+                    id="signupPassword"
+                    type="password"
+                    placeholder="Mínimo de 6 caracteres"
+                    minlength="6"
+                    required
+                >
+
+
+                <button
+                    class="enter-button"
+                    type="submit"
+                >
+                    Criar conta
+                </button>
+
+
+                <p
+                    id="signupMessage"
+                    class="message"
+                ></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="/js/paginaLogin.js"></script>
+
+</body>
+
+</html>

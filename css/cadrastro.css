@@ -1,0 +1,422 @@
+/* ================================= */
+/* RESET */
+/* ================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================= */
+/* CORES */
+/* ================================= */
+
+:root {
+
+    --green-dark: #31551c;
+
+    --green: #4f7d2d;
+
+    --green-light: #79a94b;
+
+    --green-soft: #dce8cf;
+
+    --cream: #fffaf4;
+
+    --text: #26301f;
+
+    --muted: #77736e;
+
+    --border: #d4cec5;
+}
+
+
+/* ================================= */
+/* BODY */
+/* ================================= */
+
+body {
+
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: var(--cream);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px;
+}
+
+
+/* ================================= */
+/* PÁGINA */
+/* ================================= */
+
+.cadastro-page {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* ================================= */
+/* CARD */
+/* ================================= */
+
+.cadastro-card {
+
+    width: 100%;
+
+    max-width: 575px;
+
+    background: var(--cream);
+
+    border-radius: 20px;
+
+    padding: 42px 40px 38px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.20);
+
+    text-align: left;
+}
+
+
+/* ================================= */
+/* LOGO */
+/* ================================= */
+
+.logo {
+
+    display: block;
+
+    width: 230px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    margin: 0 auto 18px;
+}
+
+
+/* ================================= */
+/* TÍTULO */
+/* ================================= */
+
+.cadastro-card h1 {
+
+    text-align: center;
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+    color: var(--green-dark);
+
+    margin-bottom: 8px;
+}
+
+
+/* ================================= */
+/* SUBTÍTULO */
+/* ================================= */
+
+.subtitle {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    color: #31551c;
+}
+
+.subtitle a {
+    color: var(--green-light);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.subtitle a:hover {
+    color: var(--green-light);
+}
+
+
+.subtitle a:hover {
+
+    color: var(--green-dark);
+}
+
+
+/* ================================= */
+/* LABEL */
+/* ================================= */
+
+.cadastro-card form > label {
+
+    display: block;
+
+    font-size: 13px;
+
+    color: var(--green-dark);
+
+    margin-bottom: 7px;
+}
+
+
+/* ================================= */
+/* CAMPOS */
+/* ================================= */
+
+.input-box {
+
+    width: 100%;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 12px;
+
+    margin-bottom: 13px;
+
+    background: white;
+
+    border: 1px solid var(--green);
+
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+}
+
+
+.input-box:focus-within {
+
+    border-color: var(--green-dark);
+
+    box-shadow:
+        0 0 0 3px rgba(79, 125, 45, 0.12);
+}
+
+
+/* ÍCONE */
+
+.input-box > span {
+
+    font-size: 15px;
+
+    margin-right: 9px;
+
+    flex-shrink: 0;
+}
+
+
+/* INPUT */
+
+.input-box input {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 14px;
+
+    color: var(--text);
+}
+
+
+.input-box input::placeholder {
+
+    color: #999;
+}
+
+
+/* ================================= */
+/* MOSTRAR SENHA */
+/* ================================= */
+
+.show-password {
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    padding: 4px;
+
+    font-size: 15px;
+
+    flex-shrink: 0;
+
+    transition: 0.3s ease;
+}
+
+
+.show-password:hover {
+
+    transform: scale(1.1);
+}
+
+
+/* ================================= */
+/* BOTÃO CRIAR CONTA */
+/* ================================= */
+
+.cadastro-button {
+
+    display: block;
+
+    margin: 22px auto 0;
+
+    min-width: 135px;
+
+    height: 48px;
+
+    padding: 0 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #ff7a20;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.35s ease;
+
+    box-shadow:
+        0 4px 0 #ff7a20;
+}
+
+
+/* HOVER */
+
+.cadastro-button:hover {
+
+    background: #ff7a20;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 0 #ff7a20;
+}
+
+/* ================================= */
+/* MENSAGEM */
+/* ================================= */
+
+.message {
+
+    min-height: 20px;
+
+    text-align: center;
+
+    margin-top: 10px;
+
+    font-size: 13px;
+}
+
+
+/* ================================= */
+/* RESPONSIVIDADE */
+/* ================================= */
+
+@media (max-width: 650px) {
+
+    body {
+
+        padding: 20px;
+    }
+
+
+    .cadastro-card {
+
+        padding: 35px 25px 30px;
+
+        border-radius: 16px;
+    }
+
+
+    .logo {
+
+        width: 160px;
+    }
+
+
+    .cadastro-card h1 {
+
+        font-size: 25px;
+    }
+
+
+    .subtitle {
+
+        font-size: 14px;
+    }
+}
+
+
+/* ================================= */
+/* CELULAR PEQUENO */
+/* ================================= */
+
+@media (max-width: 430px) {
+
+    body {
+
+        padding: 10px;
+    }
+
+
+    .cadastro-card {
+
+        padding: 30px 20px;
+    }
+
+
+    .logo {
+
+        width: 145px;
+    }
+
+
+    .cadastro-card h1 {
+
+        font-size: 23px;
+    }
+
+
+    .input-box {
+
+        height: 50px;
+    }
+}

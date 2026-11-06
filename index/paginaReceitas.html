@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reaproveit.ai - Ingredientes</title>
+
+    <link rel="icon" href="/imagens/logoicone.png">
+
+    <link rel="stylesheet" href="/css/paginaReceitas.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" type="image/png" href="/imagens/favicon_reaproveita_maximo.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+
+            <img src="/imagens/pagInicial/logoInicio.png" alt="Reaproveit.ai">
+
+        </a>
+
+        <nav class="nav">
+
+            <a href="/index/paginaInicial.html">
+                Início
+            </a>
+
+            <a href="paginaReceitas.html" class="active">
+                Reaproveite
+            </a>
+
+            
+
+        </nav>
+
+        <a href="login.html" class="btn-login">
+            Entrar
+        </a>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <main>
+
+        <section class="intro">
+
+            <h1>
+                O que você tem<br>
+
+                <span>
+                    em casa?
+                </span>
+            </h1>
+
+            <p>
+                Selecione um ingrediente e descubra receitas
+                para aproveitar melhor os alimentos que você já tem.
+            </p>
+
+        </section>
+
+
+        <!-- ÁREA PRINCIPAL -->
+
+        <section class="ingredients-section">
+
+
+            <!-- INGREDIENTES -->
+
+            <div class="ingredients-left">
+
+                <div class="section-top">
+
+                    <div>
+
+                        <h2>
+                            Escolha um ingrediente
+                        </h2>
+
+                        <p>
+                            Encontre uma nova forma de aproveitar seus alimentos.
+                        </p>
+
+                    </div>
+
+                    <span id="contador" class="contador">
+                        40 alimentos
+                    </span>
+
+                </div>
+                <div class="epicure-actions">
+
+                    <p id="selectedCount">
+                        Nenhum alimento selecionado
+                    </p>
+
+                    <button id="btnGerarReceita" type="button">
+                        Sugerir combinação de alimentos
+                    </button>
+
+                </div>
+
+                <div id="categorias">
+
+
+                    <!-- GRÃOS E CEREAIS -->
+
+                    <div class="categoria">
+
+                        <div class="categoria-header">
+
+                            <div class="categoria-icon">
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Grãos e cereais
+                                </h3>
+
+                                <p>
+                                    Alimentos básicos presentes no dia a dia.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ingredient-grid">
+
+
+                            <!-- ARROZ -->
+
+                            <button class="ingredient-card" data-id="1" data-name="Arroz branco" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/arroz.jpg" alt="Arroz branco">
+
+                                </div>
+
+                                <span>
+                                    Arroz branco
+                                </span>
+
+                            </button>
+
+
+                            <!-- FEIJÃO CARIOCA -->
+
+                            <button class="ingredient-card" data-id="2" data-name="Feijão carioca" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/carioca.jpg" alt="Feijão carioca">
+
+                                </div>
+
+                                <span>
+                                    Feijão carioca
+                                </span>
+
+                            </button>
+
+
+                            <!-- FEIJÃO PRETO -->
+
+                            <button class="ingredient-card" data-id="3" data-name="Feijão preto" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/feijao.jpg" alt="Feijão preto">
+
+                                </div>
+
+                                <span>
+                                    Feijão preto
+                                </span>
+
+                            </button>
+
+
+                            <!-- FARINHA -->
+
+                            <button class="ingredient-card" data-id="4" data-name="Farinha de mandioca" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/farinha.jpg" alt="Farinha de mandioca">
+
+                                </div>
+
+                                <span>
+                                    Farinha de mandioca
+                                </span>
+
+                            </button>
+
+
+                            <!-- FUBÁ -->
+
+                            <button class="ingredient-card" data-id="5" data-name="Fubá (milho)" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/fuba.jpg" alt="Fubá">
+
+                                </div>
+
+                                <span>
+                                    Fubá (milho)
+                                </span>
+
+                            </button>
+
+
+                            <!-- PÃO -->
+
+                            <button class="ingredient-card" data-id="6" data-name="Pão francês" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/pao.jpg" alt="Pão francês">
+
+                                </div>
+
+                                <span>
+                                    Pão francês
+                                </span>
+
+                            </button>
+
+
+                            <!-- MACARRÃO -->
+
+                            <button class="ingredient-card" data-id="7" data-name="Macarrão" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/macarrao.jpg" alt="Macarrão">
+
+                                </div>
+
+                                <span>
+                                    Macarrão
+                                </span>
+
+                            </button>
+
+
+                            <!-- TAPIOCA -->
+
+                            <button class="ingredient-card" data-id="8" data-name="Tapioca" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/tapioca.jpg" alt="Tapioca">
+
+                                </div>
+
+                                <span>
+                                    Tapioca
+                                </span>
+
+                            </button>
+
+
+                            <!-- BATATA -->
+
+                            <button class="ingredient-card" data-id="9" data-name="Batata" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/batata.jpg" alt="Batata">
+
+                                </div>
+
+                                <span>
+                                    Batata
+                                </span>
+
+                            </button>
+
+
+                            <!-- MANDIOCA -->
+
+                            <button class="ingredient-card" data-id="10" data-name="Mandioca" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/mandioca.jpg" alt="Mandioca">
+
+                                </div>
+
+                                <span>
+                                    Mandioca
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROTEÍNAS -->
+
+                    <div class="categoria">
+
+                        <div class="categoria-header">
+
+                            <div class="categoria-icon">
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Proteínas
+                                </h3>
+
+                                <p>
+                                    Proteínas que podem ser reaproveitadas em novas receitas.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ingredient-grid">
+
+
+                            <button class="ingredient-card" data-id="11" data-name="Frango (peito e coxa)"
+                                type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/frango.jpg" alt="Frango">
+
+                                </div>
+
+                                <span>
+                                    Frango
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="12"
+                                data-name="Carne bovina (patinho, acém, carne moída)" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/bovina.jpg" alt="Carne bovina">
+
+                                </div>
+
+                                <span>
+                                    Carne bovina
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="13" data-name="Ovos" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/ovo.jpg" alt="Ovos">
+
+                                </div>
+
+                                <span>
+                                    Ovos
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="14" data-name="Porco (lombo e linguiça)"
+                                type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/porco.jpg" alt="Carne suína">
+
+                                </div>
+
+                                <span>
+                                    Porco
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="15" data-name="Sardinha em lata" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/sardinha.jpg" alt="Sardinha">
+
+                                </div>
+
+                                <span>
+                                    Sardinha em lata
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="16" data-name="Atum em lata" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/atum.jpg" alt="Atum">
+
+                                </div>
+
+                                <span>
+                                    Atum em lata
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="17" data-name="Leite" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/leite.jpg" alt="Leite">
+
+                                </div>
+
+                                <span>
+                                    Leite
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="18" data-name="Queijo mussarela" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/queijo.jpg" alt="Queijo mussarela">
+
+                                </div>
+
+                                <span>
+                                    Queijo mussarela
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- VERDURAS -->
+
+                    <div class="categoria">
+
+                        <div class="categoria-header">
+
+                            <div class="categoria-icon">
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Verduras
+                                </h3>
+
+                                <p>
+                                    Verduras para diferentes preparações.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ingredient-grid">
+
+
+                            <button class="ingredient-card" data-id="19" data-name="Alface" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/alface.jpg" alt="Alface">
+
+                                </div>
+
+                                <span>
+                                    Alface
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="20" data-name="Couve" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/couve.jpg" alt="Couve">
+
+                                </div>
+
+                                <span>
+                                    Couve
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="21" data-name="Repolho" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/repolho.jpg" alt="Repolho">
+
+                                </div>
+
+                                <span>
+                                    Repolho
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="22" data-name="Cebolinha" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/cebolinha.jpg" alt="Cebolinha">
+
+                                </div>
+
+                                <span>
+                                    Cebolinha
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="23" data-name="Salsinha" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/salsinha.jpg" alt="Salsinha">
+
+                                </div>
+
+                                <span>
+                                    Salsinha
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="24" data-name="Coentro" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/coentro.jpg" alt="Coentro">
+
+                                </div>
+
+                                <span>
+                                    Coentro
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LEGUMES -->
+
+                    <div class="categoria">
+
+                        <div class="categoria-header">
+
+                            <div class="categoria-icon">
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Legumes
+                                </h3>
+
+                                <p>
+                                    Legumes que podem ser utilizados em diversas receitas.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ingredient-grid">
+
+
+                            <button class="ingredient-card" data-id="25" data-name="Tomate" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/tomate.jpg" alt="Tomate">
+
+                                </div>
+
+                                <span>
+                                    Tomate
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="26" data-name="Cebola" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/cebola.jpg" alt="Cebola">
+
+                                </div>
+
+                                <span>
+                                    Cebola
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="27" data-name="Alho" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/alho.jpg" alt="Alho">
+
+                                </div>
+
+                                <span>
+                                    Alho
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="28" data-name="Cenoura" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/cenoura.jpg" alt="Cenoura">
+
+                                </div>
+
+                                <span>
+                                    Cenoura
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="29" data-name="Abóbora" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/abrobora.jpg" alt="Abóbora">
+
+                                </div>
+
+                                <span>
+                                    Abóbora
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="30" data-name="Chuchu" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/chuchu.jpg" alt="Chuchu">
+
+                                </div>
+
+                                <span>
+                                    Chuchu
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="31" data-name="Batata-doce" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/batatadoce.jpg" alt="Batata-doce">
+
+                                </div>
+
+                                <span>
+                                    Batata-doce
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="32" data-name="Abobrinha" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/abobrinha.jpg" alt="Abobrinha">
+
+                                </div>
+
+                                <span>
+                                    Abobrinha
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FRUTAS -->
+
+                    <div class="categoria">
+
+                        <div class="categoria-header">
+
+                            <div class="categoria-icon">
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Frutas
+                                </h3>
+
+                                <p>
+                                    Frutas que podem virar sobremesas, bebidas e outras receitas.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ingredient-grid">
+
+
+                            <button class="ingredient-card" data-id="33" data-name="Banana" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/banana.jpg" alt="Banana">
+
+                                </div>
+
+                                <span>
+                                    Banana
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="34" data-name="Laranja" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/laranja.jpg" alt="Laranja">
+
+                                </div>
+
+                                <span>
+                                    Laranja
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="35" data-name="Maçã" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/Maça.jpg" alt="Maçã">
+
+                                </div>
+
+                                <span>
+                                    Maçã
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="36" data-name="Mamão" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/mamao.jpg" alt="Mamão">
+
+                                </div>
+
+                                <span>
+                                    Mamão
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="37" data-name="Limão" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/limao.jpg" alt="Limão">
+
+                                </div>
+
+                                <span>
+                                    Limão
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="38" data-name="Abacaxi" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/abacaxi.jpg" alt="Abacaxi">
+
+                                </div>
+
+                                <span>
+                                    Abacaxi
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="39" data-name="Melancia" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/melancia.jpg" alt="Melancia">
+
+                                </div>
+
+                                <span>
+                                    Melancia
+                                </span>
+
+                            </button>
+
+
+                            <button class="ingredient-card" data-id="40" data-name="Morango" type="button">
+
+                                <div class="food-image">
+
+                                    <img src="/imagens/ingredientes/morango.jpg" alt="Morango">
+
+                                </div>
+
+                                <span>
+                                    Morango
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECEITAS -->
+
+            <aside class="recipes-area">
+                <!-- RESULTADO DO EPICURE -->
+
+                <div id="epicureResult" class="epicure-result" hidden>
+
+                    <div class="epicure-result-header">
+
+                        <span>SUGESTÃO CULINÁRIA</span>
+
+                        <h2>Resultado da consulta</h2>
+
+                    </div>
+
+                    <p id="epicureStatus">
+                        Selecione os alimentos e clique no botão para consultar.
+                    </p>
+
+                    <div id="epicureText"></div>
+
+                </div>
+
+
+                <div id="placeholder" class="placeholder">
+
+                    <div class="placeholder-icon">
+                    </div>
+
+                    <h2>
+                        Escolha um alimento
+                    </h2>
+
+                    <p>
+                        Clique em um dos ingredientes
+                        para encontrar receitas.
+                    </p>
+
+                </div>
+
+
+                <div id="recipesContent" class="recipes-content">
+
+                    <div class="recipes-header">
+
+                        <div>
+
+                            <span>
+                                RECEITAS
+                            </span>
+
+                            <h2 id="selectedIngredient">
+                                Ingrediente
+                            </h2>
+
+                        </div>
+
+                        <button id="closeRecipes" class="close-recipes" type="button">
+                            ×
+                        </button>
+
+                    </div>
+
+
+                    <div id="recipeList" class="recipe-list"></div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <script src="/js/paginaReceitas.js"></script>
+
+</body>
+
+</html>

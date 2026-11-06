@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reaproveit.ai - Cadastro</title>
+
+    <link rel="stylesheet" href="/css/cadrastro.css">
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="/imagens/favicon_reaproveita_maximo.png"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="cadastro-page">
+
+        <section class="cadastro-card">
+
+            <!-- LOGO -->
+
+            <img
+                class="logo"
+                src="/imagens/logoInicio.png"
+                alt="Reaproveit.ai"
+            >
+
+
+            <!-- TÍTULO -->
+
+            <h1>
+                Cadastrar nova conta
+            </h1>
+
+
+            <p class="subtitle">
+
+                Crie uma conta ou
+
+                <a href="paginaLogin.html">
+                    faça login em uma conta existente
+                </a>
+
+            </p>
+
+
+            <!-- FORMULÁRIO -->
+
+            <form id="cadastroForm">
+
+
+                <!-- E-MAIL -->
+
+                <label for="email">
+                    E-mail
+                </label>
+
+                <div class="input-box">
+
+                    <span></span>
+
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+                </div>
+
+                </div>
+
+
+                <!-- SENHA -->
+
+                <label for="senha">
+                    Senha
+                </label>
+
+                <div class="input-box">
+
+                    <span></span>
+
+                    <input
+                        id="senha"
+                        type="password"
+                        placeholder="Digite sua senha"
+                        minlength="6"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="show-password"
+                        id="mostrarSenha"
+                    >
+                    
+                    </button>
+
+                </div>
+
+
+                <!-- REPETIR SENHA -->
+
+                <label for="confirmarSenha">
+                    Repetir a senha para confirmar
+                </label>
+
+                <div class="input-box">
+
+                    <span></span>
+
+                    <input
+                        id="confirmarSenha"
+                        type="password"
+                        placeholder="Digite a senha novamente"
+                        minlength="6"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="show-password"
+                        id="mostrarConfirmarSenha"
+                    >
+                        
+                    </button>
+
+                </div>
+
+
+                <!-- BOTÃO -->
+
+                <button
+                    class="cadastro-button"
+                    type="submit"
+                >
+                    Criar conta
+                    
+                </button>
+
+
+                <!-- MENSAGEM -->
+
+                <p
+                    id="message"
+                    class="message"
+                ></p>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="/js/cadastro.js"></script>
+
+</body>
+
+</html>
