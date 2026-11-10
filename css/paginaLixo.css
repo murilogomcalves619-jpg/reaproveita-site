@@ -1,12 +1,18 @@
+/* ========================================
+   RESET
+======================================== */
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* CORES */
+
+/* ========================================
+   CORES
+======================================== */
+
 :root {
     --green: #3f4d1f;
     --green-dark: #28301c;
@@ -22,7 +28,11 @@
     --line: #e5e2d5;
 }
 
-/* CONFIGURAÇÃO GERAL */
+
+/* ========================================
+   CONFIGURAÇÃO GERAL
+======================================== */
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 110px;
@@ -31,15 +41,12 @@ html {
 body {
     min-height: 100vh;
     padding-top: 92px;
-    padding-bottom: 175px;
-
     font-family: "DM Sans", Arial, Helvetica, sans-serif;
-
     color: var(--text);
     background: var(--cream);
-
     overflow-x: hidden;
 }
+
 
 /* ========================================
    CABEÇALHO
@@ -63,28 +70,28 @@ body {
     border-bottom: 1px solid #ece9dc;
 }
 
+
 /* LOGO */
+
 .brand {
     display: flex;
     align-items: center;
-
     width: auto;
     flex-shrink: 0;
-
     text-decoration: none;
 }
 
 .brand img {
     display: block;
-
     width: 235px;
     max-height: 72px;
-
     object-fit: contain;
     object-position: left center;
 }
 
+
 /* MENU */
+
 .nav {
     height: 100%;
 
@@ -136,7 +143,9 @@ body {
     width: 100%;
 }
 
+
 /* BOTÕES DO CABEÇALHO */
+
 .botoes-login {
     display: flex;
     align-items: center;
@@ -173,9 +182,9 @@ body {
 .btn-topo:hover {
     background: #e96b17;
     transform: translateY(-2px);
-
     box-shadow: 0 6px 15px rgba(244, 119, 32, 0.18);
 }
+
 
 /* ========================================
    ÁREA PRINCIPAL
@@ -188,6 +197,7 @@ body {
     margin: 0 auto;
     padding: 35px 8vw 65px;
 }
+
 
 /* ========================================
    DESTAQUE PRINCIPAL — HERO
@@ -203,13 +213,15 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    margin-bottom: 35px;
+    margin-bottom: 18px;
 
     overflow: hidden;
     background: var(--cream);
 }
 
+
 /* TEXTO DO DESTAQUE */
+
 .hero-texto {
     position: relative;
     z-index: 2;
@@ -224,8 +236,7 @@ body {
 .hero h1 {
     max-width: 750px;
 
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
     color: var(--green-dark);
 
@@ -240,7 +251,9 @@ body {
     color: var(--orange);
 }
 
+
 /* DESCRIÇÃO */
+
 .hero p {
     max-width: 700px;
 
@@ -252,31 +265,28 @@ body {
     line-height: 1.5;
 }
 
+
 /* IMAGEM DO DESTAQUE */
-.hero-image {
+
+.hero-imagem-container {
     position: relative;
 
-    width:110%;
-    height: 110%;
-
+    width: 45%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
-    margin-left: auto;
-    margin-right: -30px;
-
-    flex-shrink: 0;
 }
 
-.hero-image img {
+.hero-image {
     display: block;
 
-    max-width: 100%;
+    width: 100%;
+    max-width: 550px;
     height: auto;
 
     object-fit: contain;
 }
+
 
 /* ========================================
    SEÇÃO DOS ALIMENTOS
@@ -285,11 +295,12 @@ body {
 .secao {
     position: relative;
     z-index: 2;
-
     width: 100%;
 }
 
+
 /* TÍTULO DA SEÇÃO */
+
 .titulo-secao {
     display: inline-flex;
     align-items: center;
@@ -312,6 +323,7 @@ body {
     line-height: 1.4;
 }
 
+
 /* ========================================
    GRADE DOS CARDS
 ======================================== */
@@ -324,6 +336,7 @@ body {
     gap: 22px;
     width: 100%;
 }
+
 
 /* ========================================
    CARDS DOS ALIMENTOS
@@ -362,7 +375,9 @@ body {
     box-shadow: 0 14px 30px rgba(52, 64, 25, 0.10);
 }
 
+
 /* ESPAÇO DA IMAGEM */
+
 .imagem-card {
     width: 100%;
     height: 155px;
@@ -381,7 +396,9 @@ body {
     border-radius: 13px;
 }
 
+
 /* IMAGENS */
+
 .imagem-card img {
     display: block;
 
@@ -399,7 +416,9 @@ body {
     transform: scale(1.05);
 }
 
+
 /* NOME DO ALIMENTO */
+
 .card h3 {
     margin-bottom: 10px;
 
@@ -411,7 +430,9 @@ body {
     line-height: 1.35;
 }
 
+
 /* TEXTO REUTILIZE COMO */
+
 .card > span {
     margin-bottom: 8px;
 
@@ -421,7 +442,9 @@ body {
     font-weight: 700;
 }
 
+
 /* DESCRIÇÃO DO CARD */
+
 .card p {
     max-width: 250px;
 
@@ -431,115 +454,311 @@ body {
     line-height: 1.6;
 }
 
+
 /* ========================================
-   BARRA INFERIOR DE REAPROVEITAMENTO
+   OUTRAS FORMAS DE REUTILIZAR
 ======================================== */
 
-.barra-reaproveitamento {
-    position: relative;
-    left: auto;
-    bottom: auto;
-    transform: none;
+/* ========================================
+   OUTRAS FORMAS DE REUTILIZAR
+======================================== */
 
-    width: calc(100% - 11.4%);
+.outras-formas {
+    position: relative;
+
+    width: 100%;
     max-width: 1650px;
 
-    min-height: 145px;
-    margin: 0 auto 35px;
-    padding: 14px 18px;
+    margin: 45px auto 55px;
 
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-
-    background: #fffdf8;
-    border: 1px solid #e5e2d5;
-    border-radius: 18px;
-
-    box-shadow: 0 8px 25px rgba(40, 48, 28, 0.07);
+    padding-top: 45px;
 }
 
-/* OPÇÕES DA BARRA */
-.opcao {
-    min-width: 0;
-    min-height: 110px;
+/* TÍTULO */
 
-    padding: 3px 7px;
+.outras-formas h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 10px 20px;
+
+    background: var(--green);
+    color: white;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    border-radius: 12px 12px 0 0;
+}
+
+/* REMOVE O QUADRADO EXTERNO */
+
+.barra-reaproveitamento {
+    width: 100%;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-    text-align: center;
+    gap: 18px;
+
+    padding: 0;
+
+    background: transparent;
+    border: none;
+    border-radius: 0;
+
+    box-shadow: none;
+}
+
+/* CARTÕES */
+
+.opcao {
+    width: 100%;
+    min-height: 145px;
+
+    padding: 22px 35px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    background: #fffdf8;
+
+    border: 1px solid var(--line);
+    border-radius: 18px;
+
+    text-align: left;
     text-decoration: none;
 
-    border-radius: 15px;
-
-    transition:
-        background 0.25s ease,
-        transform 0.25s ease;
+    transition: 0.3s ease;
 }
+
+/* EFEITO AO PASSAR O MOUSE */
 
 .opcao:hover {
     background: #fffef9;
-    transform: translateY(-3px);
+
+    border-color: var(--orange);
+
+    transform: translateX(6px);
+
+    box-shadow: 0 8px 22px rgba(40, 48, 28, 0.08);
 }
 
 /* ÍCONES */
-.icone {
-    width: 50px;
-    height: 50px;
 
-    flex-shrink: 0;
+.icone {
+    width: 95px;
+    height: 95px;
+
+    min-width: 95px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 8px;
-
-    border-radius: 50%;
     background: var(--green-soft);
 
-    font-size: 23px;
+    border: 1px solid #d3ceb8;
+    border-radius: 50%;
 
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease;
+    transition: 0.3s ease;
+}
+
+.icone img {
+    width: 60px;
+    height: 60px;
+
+    object-fit: contain;
 }
 
 .opcao:hover .icone {
     background: #ffe2cf;
-    transform: scale(1.07);
+    transform: scale(1.06);
 }
 
-/* NOME DA OPÇÃO */
-.opcao strong {
-    margin-bottom: 5px;
+/* TEXTOS */
 
+.opcao-texto {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.opcao strong {
     color: var(--green-dark);
 
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
-
-    line-height: 1.35;
-
-    transition: color 0.25s ease;
 }
 
 .opcao:hover strong {
     color: var(--orange);
 }
 
-/* DESCRIÇÃO DA OPÇÃO */
-.opcao > span {
-    max-width: 190px;
+.opcao-texto > span {
+    max-width: 850px;
 
-    color: #77796f;
+    color: var(--text-light);
 
-    font-size: 11px;
-    line-height: 1.45;
+    font-size: 15px;
+    line-height: 1.6;
 }
+
+/* SETA */
+
+.seta {
+    flex-shrink: 0;
+
+    color: var(--green);
+
+    font-size: 35px;
+
+    transition: 0.3s ease;
+}
+
+.opcao:hover .seta {
+    color: var(--orange);
+    transform: translateX(7px);
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .opcao {
+        min-height: 125px;
+        padding: 18px 22px;
+        gap: 20px;
+    }
+
+    .icone {
+        width: 78px;
+        height: 78px;
+        min-width: 78px;
+    }
+
+    .icone img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .opcao strong {
+        font-size: 17px;
+    }
+
+    .opcao-texto > span {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .outras-formas {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .outras-formas h2 {
+        font-size: 16px;
+        padding: 9px 13px;
+    }
+
+    .barra-reaproveitamento {
+        gap: 12px;
+    }
+
+    .opcao {
+        min-height: 100px;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .icone {
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+    }
+
+    .icone img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .opcao strong {
+        font-size: 13px;
+    }
+
+    .opcao-texto > span {
+        font-size: 11px;
+    }
+
+    .seta {
+        font-size: 22px;
+    }
+}
+
+.opcao:hover .seta {
+    color: var(--orange);
+    transform: translateX(5px);
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+.rodape {
+    width: 100%;
+    min-height: 85px;
+
+    padding: 12px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+
+    background: var(--green);
+    color: white;
+}
+
+.rodape-logo {
+    display: flex;
+    align-items: center;
+}
+
+.rodape-logo img {
+    width: 185px;
+    max-height: 48px;
+
+    object-fit: contain;
+
+    filter: brightness(0) invert(1);
+}
+
+.rodape p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin: 0;
+
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
 
 /* ========================================
    TELAS MÉDIAS
@@ -595,10 +814,11 @@ body {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-    .barra-reaproveitamento {
-        width: calc(100% - 5%);
+    .outras-formas {
+        width: 95%;
     }
 }
+
 
 /* ========================================
    TABLETS
@@ -608,7 +828,6 @@ body {
 
     body {
         padding-top: 82px;
-        padding-bottom: 160px;
     }
 
     .header {
@@ -659,12 +878,8 @@ body {
         font-size: 15px;
     }
 
-    .hero-image {
+    .hero-imagem-container {
         width: 40%;
-        height: auto;
-
-        justify-content: flex-end;
-        align-items: center;
     }
 
     .cards-grid {
@@ -676,34 +891,41 @@ body {
         min-height: 300px;
     }
 
+    .outras-formas {
+        width: 94%;
+    }
+
     .barra-reaproveitamento {
-        bottom: 12px;
-
-        width: calc(100% - 30px);
-        min-height: 125px;
-
-        padding: 10px;
-        gap: 4px;
+        padding: 18px;
+        gap: 13px;
     }
 
     .opcao {
-        padding: 3px;
+        min-height: 105px;
+        padding: 13px 18px;
+        gap: 17px;
     }
 
     .icone {
-        width: 43px;
-        height: 43px;
-        font-size: 21px;
+        width: 68px;
+        height: 68px;
+        min-width: 68px;
+    }
+
+    .icone img {
+        width: 42px;
+        height: 42px;
     }
 
     .opcao strong {
-        font-size: 12px;
+        font-size: 15px;
     }
 
-    .opcao > span {
-        font-size: 10px;
+    .opcao-texto > span {
+        font-size: 12px;
     }
 }
+
 
 /* ========================================
    CELULARES
@@ -713,7 +935,6 @@ body {
 
     body {
         padding-top: 72px;
-        padding-bottom: 105px;
     }
 
     .header {
@@ -766,13 +987,12 @@ body {
         line-height: 1.5;
     }
 
-    .hero-image {
+    .hero-imagem-container {
         display: none;
     }
 
     .titulo-secao {
         display: flex;
-
         width: 100%;
 
         margin-bottom: 17px;
@@ -823,42 +1043,91 @@ body {
         line-height: 1.45;
     }
 
+
+    /* OUTRAS FORMAS NO CELULAR */
+
+    .outras-formas {
+        width: 100%;
+        margin: 35px auto 40px;
+        padding-top: 40px;
+    }
+
+    .outras-formas h2 {
+        padding: 9px 13px;
+        font-size: 16px;
+        border-radius: 10px 10px 0 0;
+    }
+
     .barra-reaproveitamento {
-        bottom: 5px;
-        left: 50%;
-
-        width: calc(100% - 10px);
-        min-height: 72px;
-
-        padding: 5px;
-        gap: 2px;
-
-        border-radius: 15px;
+        padding: 12px;
+        gap: 11px;
+        border-radius: 13px;
     }
 
     .opcao {
-        min-height: 60px;
-        padding: 3px 1px;
+        min-height: 95px;
+
+        padding: 11px;
+
+        gap: 12px;
+
+        border-radius: 12px;
     }
 
     .icone {
-        width: 30px;
-        height: 30px;
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+    }
 
-        margin-bottom: 4px;
-        font-size: 15px;
+    .icone img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .opcao-texto {
+        gap: 5px;
     }
 
     .opcao strong {
-        margin-bottom: 0;
-        font-size: 8px;
-        line-height: 1.25;
+        font-size: 13px;
     }
 
-    .opcao > span {
-        display: none;
+    .opcao-texto > span {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .seta {
+        font-size: 21px;
+    }
+
+
+    /* RODAPÉ */
+
+    .rodape {
+        min-height: 110px;
+
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 8px;
+    }
+
+    .rodape p {
+        position: static;
+        transform: none;
+
+        font-size: 11px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .rodape-logo img {
+        width: 145px;
     }
 }
+
 
 /* ========================================
    CELULARES MUITO PEQUENOS
@@ -899,7 +1168,27 @@ body {
         height: 95px;
     }
 
+    .opcao {
+        gap: 9px;
+        padding: 9px;
+    }
+
+    .icone {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+    }
+
+    .icone img {
+        width: 31px;
+        height: 31px;
+    }
+
     .opcao strong {
-        font-size: 7px;
+        font-size: 12px;
+    }
+
+    .opcao-texto > span {
+        font-size: 10px;
     }
 }

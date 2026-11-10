@@ -1,3 +1,4 @@
+
 /* =========================
    CONFIGURAÇÕES GERAIS
 ========================= */
@@ -98,7 +99,7 @@ body {
     gap: 32px;
 }
 
-.nav > a {
+.nav>a {
     height: 100%;
 
     display: flex;
@@ -114,14 +115,14 @@ body {
     transition: .3s;
 }
 
-.nav > a:hover {
+.nav>a:hover {
     color: var(--orange);
 }
 
 
 /* BOTÃO VOLTAR */
 
-.nav > a.btn-topo {
+.nav>a.btn-topo {
     height: 44px;
 
     padding: 0 30px;
@@ -142,7 +143,7 @@ body {
     transition: .3s;
 }
 
-.nav > a.btn-topo:hover {
+.nav>a.btn-topo:hover {
     color: white;
 
     transform: translateY(-2px);
@@ -255,39 +256,64 @@ body {
 
 
 /* =========================
-   DESTAQUE VISUAL DOS ANIMAIS
+   IMAGEM DOS ANIMAIS
 ========================= */
 
 .hero-imagem {
-      width: 100%;
-    height: 360px;
+    width: 100%;
+    height: 370px;
+
+    min-width: 0;
 
     display: flex;
 
     align-items: center;
     justify-content: center;
 
-    overflow: visible;
+    position: relative;
+
+    overflow: hidden;
 }
+
+/* IMAGEM */
+
+.hero-imagem img {
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+    object-position: center center;
+}
+
+
+/* CASO A IMAGEM ESTEJA DENTRO DO CÍRCULO */
 
 .hero-circulo {
-    width: 260px;
-    height: 260px;
+    width: 100%;
+    height: 100%;
 
     display: flex;
 
     align-items: center;
     justify-content: center;
 
-    border-radius: 50%;
-
-    background: var(--green-soft);
-
-    border: 2px solid #d3ceb8;
-
-    box-shadow: 0 0 0 18px rgba(63, 77, 31, .05);
+    overflow: hidden;
 }
 
+.hero-circulo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+}
 
 
 /* =========================
@@ -582,7 +608,7 @@ body {
 
 /* TÍTULO */
 
-.outras-formas > h2 {
+.outras-formas>h2 {
     position: absolute;
 
     top: 0;
@@ -796,6 +822,8 @@ body {
 
     .hero-pagina {
         min-height: 330px;
+
+        grid-template-columns: 1fr 1fr;
     }
 
     .hero-pagina h1 {
@@ -814,13 +842,8 @@ body {
         height: 320px;
     }
 
-    .hero-circulo {
-        width: 220px;
-        height: 220px;
-    }
-
-    .hero-circulo span {
-        font-size: 90px;
+    .hero-imagem img {
+        max-width: 100%;
     }
 
     .cards-grid {
@@ -898,6 +921,8 @@ body {
 
         letter-spacing: -2px;
 
+        margin-top: 0;
+
         margin-bottom: 15px;
     }
 
@@ -912,18 +937,21 @@ body {
     }
 
     .hero-imagem {
+        width: 100%;
+
         height: 250px;
 
         min-height: auto;
+
+        overflow: hidden;
     }
 
-    .hero-circulo {
-        width: 175px;
-        height: 175px;
-    }
+    .hero-imagem img {
+        width: 100%;
+        height: 100%;
 
-    .hero-circulo span {
-        font-size: 75px;
+        object-fit: contain;
+        object-position: center;
     }
 
 
@@ -1010,7 +1038,7 @@ body {
         margin-top: 30px;
     }
 
-    .outras-formas > h2 {
+    .outras-formas>h2 {
         font-size: 14px;
 
         left: 5px;

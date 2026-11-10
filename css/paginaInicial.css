@@ -430,14 +430,21 @@ body {
 }
 
 .feature-icon {
-    flex: 0 0 65px;
-    height: 65px;
+     width: 90px;
+    height: 90px;
+    min-width: 90px;
     border-radius: 50%;
-    background: #e8ecd5;
-    color: var(--green);
-    display: grid;
-    place-items: center;
-    font-size: 31px;
+    background-color: #e9edd7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
 }
 
 .feature-card h3 {

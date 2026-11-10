@@ -98,7 +98,7 @@ body {
     gap: 32px;
 }
 
-.nav > a {
+.nav>a {
     height: 100%;
 
     display: flex;
@@ -114,14 +114,14 @@ body {
     transition: .3s;
 }
 
-.nav > a:hover {
+.nav>a:hover {
     color: var(--orange);
 }
 
 
 /* BOTÃO VOLTAR */
 
-.nav > a.btn-topo {
+.nav>a.btn-topo {
     height: 44px;
 
     padding: 0 30px;
@@ -142,7 +142,7 @@ body {
     transition: .3s;
 }
 
-.nav > a.btn-topo:hover {
+.nav>a.btn-topo:hover {
     color: white;
 
     transform: translateY(-2px);
@@ -583,7 +583,7 @@ body {
 
 /* TÍTULO */
 
-.outras-formas > h2 {
+.outras-formas>h2 {
     position: absolute;
 
     top: 0;
@@ -999,7 +999,7 @@ body {
         margin-top: 30px;
     }
 
-    .outras-formas > h2 {
+    .outras-formas>h2 {
         font-size: 14px;
 
         left: 5px;
